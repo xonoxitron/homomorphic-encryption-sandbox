@@ -3,13 +3,13 @@ from phe import paillier
 #  generate a public + private keypair
 public_key, private_key = paillier.generate_paillier_keypair()
 
-# plain variables
+# plain constants
 w = 5
 x = 10
 y = 20
 z = 40
 
-#  encrypted variables
+# encrypted variables
 encrypted_w = public_key.encrypt(w)
 encrypted_x = public_key.encrypt(x)
 encrypted_y = public_key.encrypt(y)
