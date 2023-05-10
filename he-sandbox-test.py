@@ -23,9 +23,13 @@ encrypted_division = encrypted_z / w
 
 # decrypted math operations results
 decrypted_addition = private_key.decrypt(encrypted_addition)
+assert decrypted_addition == 30
 decrypted_subtraction = private_key.decrypt(encrypted_subtraction)
+assert decrypted_subtraction == 35
 decrypted_multiplication = private_key.decrypt(encrypted_multiplication)
+assert decrypted_multiplication == 200
 decrypted_division = private_key.decrypt(encrypted_division)
+assert decrypted_division == 8
 
 print("decrypted_addition: ", decrypted_addition)
 print("decrypted_subtraction: ", decrypted_subtraction)
